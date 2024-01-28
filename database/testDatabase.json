@@ -1,0 +1,16 @@
+[
+  {
+    "email": "test@gmail.com",
+    "password": "$2b$10$JUgE1HFXI5WsAQyKfCJxCOhXZQPD5ATpb3gs.w1eHDw0IM6F2E1G.",
+    "wallets": [
+      {
+        "privateKey": "94af1d30422e9c878775d1c5b081398a:d4682ef5e40f58c4176a8ea52551411cbedb55ae2b9aa5bfeb67b78f0157a61ee3038b8cc2cfbfc2fdf608734b4f15f07f63e8f87981263eb33bd68ff7c84383443f4361e15d03b1d3b6558d6d7426e5",
+        "publicKey": "0x7aBe3b2C31685903074dfBAB9687f937551d1762"
+      },
+      {
+        "privateKey": "e0796eeea72699be610270e7672c62f1:8199ef6ae5a314e82d4a31064a751bcec64b3f1b505b3b2b7b95dc387813cb368641ba098fbd652f36ffed029e51607281fef11e2fa3144dda296dbca7b4593e2cb1f26fac77a817bebc231a2744f1d6",
+        "publicKey": "0x0bAAd3feEcB200CdE51C1CDde56379289F64d067"
+      }
+    ]
+  }
+]
