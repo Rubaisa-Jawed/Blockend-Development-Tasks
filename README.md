@@ -1,40 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Custodial Wallet Application
 
-## Getting Started
+This project implements a custodial wallet application with a focus on Ethereum and ERC20 token management. It consists of a backend for managing user authentication, wallet operations, and ERC20 token transactions, along with a minimal frontend interface for user interactions.
 
-First, run the development server:
+## Part 1: Custodial Wallet Backend
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1.1 User Authentication (Sign Up / Sign In)
+- **API Endpoints for Authentication**: Implemented secure API endpoints for user sign up and sign in.
+- **Password Security**: Passwords are hashed using bcrypt for secure storage.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1.2 Ethereum Wallet Generation
+- **Wallet Creation**: Upon user registration, a new Ethereum wallet is generated and associated with the user's email.
+- **Secure Storage**: The wallet's private and public keys are securely stored.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### 1.3 Multiple Wallets per User
+- **Multiple Wallet Support**: Users can add multiple Ethereum wallets to their accounts.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Part 2: ERC20 Token Creation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### 2.1 ERC20 Token Smart Contract
+- **Smart Contract Development**: Developed an ERC20 token smart contract on the Ethereum blockchain.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 2.2 Token Minting
+- **Minting API Endpoint**: Created an API endpoint for minting new ERC20 tokens.
 
-## Learn More
+### 2.3 Token Transfer
+- **Token Transfer Functionality**: Implemented functionality to transfer ERC20 tokens between Ethereum wallets.
 
-To learn more about Next.js, take a look at the following resources:
+## Part 3: Minimal Frontend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3.1 Sign In / Sign Up Page
+- **Authentication Pages**: Developed simple sign-in and sign-up pages.
+- **Frontend-Backend Integration**: Connected the frontend to the backend authentication API.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 3.2 Display Ether and Token Balances
+- **Balance Display**: Users can view their Ethereum and ERC20 token balances.
+- **Dynamic Balance Fetching**: Balances are fetched and updated from the backend.
 
-## Deploy on Vercel
+### 3.3 Transfer Interface
+- **Transfer Functionality**: Users can transfer ERC20 tokens to another account using the interface
+- **Validation and Processing**: Transfer requests are validated and processed through backend APIs.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Testing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Test Account**: To test the application, you can create a new account or use the following test credentials:
+  - Email: `test@gmail.com`
+  - Password: `123`
+
+---
+
+For more details on each part of the project, please refer to the specific documentation sections or comments within the codebase.
